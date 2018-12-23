@@ -11,9 +11,16 @@ orders from the database respectively.
 This Project is using the SQL Server on Visual Studio 2017 for its database.
 
 # STEPS TO SET UP DB
+- Open the SQL Server Object Extension window in VS
+- Open the Package Manager Console 
+- Type "Drop-Databse" in the PM console
+- Then type "Update-Database". This will upload the Items and Order tables under the PetStoreOrderAPI database folder. 
 
 # VIEW THE ORDER DETAILS 
-  Go to Client API. Open the 'wwwroot' folder. Right-click on the index.html file and click on 'View in Browser'. 
+  -Go to Client API project.  
+  -Open the 'wwwroot' folder. 
+  -Right-click on the index.html file and click on 'View in Browser'. 
+  
   The HTML page will display a list of order IDs currently in the DB. Below it is a text box to enter an Order ID to display
   that order's summary (list of products, quantity, and Total Cost). 
 
