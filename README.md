@@ -5,8 +5,20 @@ This Project accepts an order entry request with JSON, calculates the Total Cost
 in the order), and has an XUnit test to confirm that the API successfully returns the correct order total. 
 
 This Project has DummyData for an order with the Product Name, ID, and Price due to the URL links for the Inventory API being disabled.
-New orders can be entered via a Post Method to URL: https://localhost:44373/api/orders. GET, PUT, and DELETE requests will return, edit, and delete
-orders from the database respectively. 
+New orders can be entered via a Post Method to URL: https://localhost:44373/api/orders. GET, PUT, and DELETE requests will return, edit, and delete orders from the database respectively. 
+
+The format for the JSON data is entered below. Note, if no Order Id is entered, one will be automatically generated. However, if no Product price or quantity is entered, the total can't be calculated. This is due to the Inventory API being disabled. The Dummy Data has an order already in the DB with Product details, so the cost can be calculated for it. 
+
+{
+	"orderID": "2",
+  "customerId": "67890",
+  "items": [
+    {
+      "productId": "qwertrr",
+      "quantity": 1
+    }
+  ]
+}
 
 This Project is using the SQL Server on Visual Studio 2017 for its database.
 
