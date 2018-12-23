@@ -23,13 +23,13 @@ The format for the JSON data is entered below. Note, if no Order Id is entered, 
 This Project is using the SQL Server on Visual Studio 2017 for its database.
 
 # STEPS TO SET UP DB
-- Open the SQL Server Object Extension window in VS
 - Open the Package Manager Console 
 - Type "Drop-Databse" in the PM console
-- Then type "Update-Database". This will upload the Items and Order tables under the PetStoreOrderAPI database folder. 
+- Then type "Update-Database". This will upload the Items and Order tables under the PetStoreOrderAPI database folder.
+- Open the SQL Server Object Extension window in VS to view the tables. 
 
 # VIEW THE ORDER DETAILS 
-  -Go to Client API project.  
+  -Go to Client API project.
   -Open the 'wwwroot' folder. 
   -Right-click on the index.html file and click on 'View in Browser'. 
   
